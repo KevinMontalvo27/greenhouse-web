@@ -1,7 +1,7 @@
 // src/pages/Dashboard/Dashboard.tsx
-import { MainLayout } from '@/components/layout/MainLayout/MainLayout';
+import { MainLayout } from '../components/layout/MainLayout';
 import { Card, Badge } from '../components/common';
-import { useAuthContext } from '@/context/AuthContext';
+import { useAuthContext } from '../context/AuthContext';
 
 export const Dashboard = () => {
   const { user } = useAuthContext();

@@ -1,9 +1,9 @@
 // src/pages/Users/UsersList.tsx
 import { useState, useEffect } from 'react';
-import { MainLayout } from '@/components/layout/MainLayout/MainLayout';
-import { Table, Button, Modal, ModalFooter, Input, Alert, Badge } from '@/components/common';
-import usersService from '@/services/users.service';
-import type { User, UserCreate } from '@/types';
+import { MainLayout } from '../components/layout/MainLayout';
+import { Table, Button, Modal, ModalFooter, Input, Alert, Badge } from '../components/common';
+import usersService from '../services/users.service';
+import type { User, UserCreate } from '../types';
 
 export const UsersList = () => {
   const [users, setUsers] = useState<User[]>([]);

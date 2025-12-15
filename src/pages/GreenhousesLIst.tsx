@@ -1,10 +1,10 @@
 // src/pages/Greenhouses/GreenhousesList.tsx
 import { useState, useEffect } from 'react';
-import { MainLayout } from '@/components/layout/MainLayout/MainLayout';
-import { Table, Button, Modal, ModalFooter, Input, Alert } from '@/components/common';
-import greenhousesService from '@/services/greenhouses.service';
-import { useAuthContext } from '@/context/AuthContext';
-import type { Greenhouse, GreenhouseCreate } from '@/types';
+import { MainLayout } from '../components/layout/MainLayout';
+import { Table, Button, Modal, ModalFooter, Input, Alert } from '../components/common';
+import greenhousesService from '../services/greenhouses.service';
+import { useAuthContext } from '../context/AuthContext';
+import type { Greenhouse, GreenhouseCreate } from '../types';
 
 export const GreenhousesList = () => {
   const { user } = useAuthContext();
