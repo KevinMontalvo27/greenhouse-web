@@ -4,7 +4,11 @@ import { PrivateRoute } from './PrivateRoute';
 import { Login } from '../pages/Login';
 import { Dashboard } from '../pages/Dashboard';
 import { UsersList } from '../pages/UsersList';
-import { GreenhousesList } from '../pages/GreenhousesLIst';
+import { GreenhousesList } from '../pages/GreenhousesList';
+import { GreenhouseDetail } from '@/pages/GreenhouseDetail';
+import { PlantsList } from '@/pages/PlantList';
+import { SensorsList } from '@/pages/SensorLIst';
+
 
 export const AppRoutes = () => {
   return (
@@ -19,6 +23,10 @@ export const AppRoutes = () => {
             <Route path="/dashboard" element={<Dashboard />} />
             <Route path="/users" element={<UsersList />} />
             <Route path="/greenhouses" element={<GreenhousesList />} />
+            <Route path="/greenhouses" element={<GreenhousesList />} />
+            <Route path="/greenhouses/:id" element={<GreenhouseDetail />} />
+            <Route path="/plants" element={<PlantsList />} />
+            <Route path="/sensors" element={<SensorsList />} />
           </Route>
 
           {/* Redirección por defecto */}

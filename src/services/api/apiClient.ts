@@ -6,6 +6,7 @@ const apiClient: AxiosInstance = axios.create({
   headers: {
     'Content-Type': 'application/json',
   },
+  withCredentials: false,
 });
 
 // Interceptor para agregar token a las peticiones (opcional para el futuro)

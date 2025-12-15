@@ -1,7 +1,7 @@
 // src/services/plants.service.ts
 import apiClient from './api/apiClient';
 import ENDPOINTS from './api/endpoints';
-import type { Plant, PlantCreate, PlantUpdate } from '../types';
+import type { Plant, PlantCreate, PlantUpdate } from '@/types';
 
 class PlantsService {
   async getAll(skip = 0, limit = 100): Promise<Plant[]> {
