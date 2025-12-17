@@ -7,7 +7,7 @@ import { UsersList } from '../pages/UsersList';
 import { GreenhousesList } from '../pages/GreenhousesList';
 import { GreenhouseDetail } from '@/pages/GreenhouseDetail';
 import { PlantsList } from '@/pages/PlantList';
-import { SensorsList } from '@/pages/SensorLIst';
+import { SensorsList } from '@/pages/SensorList';
 
 
 export const AppRoutes = () => {
